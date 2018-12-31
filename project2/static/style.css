@@ -1,0 +1,157 @@
+html{
+  height: 100%;
+}
+body{
+  font-family: "Segoe UI", sans-serif;
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+}
+
+.container{
+  display: flex;
+}
+
+.channel-body{
+  flex:1;
+  padding: 0 0px 0 20px;
+  margin: 0 0px 0 20px;
+}
+
+.chat-body{
+  flex:3;
+  padding: 0 30px 0 10px;
+  margin: 0 30px 0 10px;
+  height: 500px;
+  max-height: 800px;
+  overflow-y: scroll;
+  justify-content: flex-end;
+}
+
+.bar-message{
+  display: flex;
+}
+
+.messages{
+  display: inline-block;
+  position:relative;
+  flex: 1;
+  overflow: auto;
+  width: 100%;
+}
+
+.guess-message{
+  border-radius: 10px;
+  background-color: #F5F6F7;
+  margin: 10px;
+  color:#505050;
+  max-width: 60%;
+}
+
+.self-message{
+  border-radius: 10px;
+  background-color: #87CEEB;
+  color:white;
+  margin: 10px;
+  max-width: 60%;
+}
+
+.self-message datetime, .guess-message datetime{
+  color: #727272;
+  font-size: 10px;
+  padding: 0 0 0 5px;
+}
+
+.self-message p , .guess-message p{
+  margin:0;
+  padding: 0 0 0 5px;
+  border: 0;
+  font-size:15px;
+}
+
+.self-message datetime{
+  color:white;
+}
+
+.channels{
+  background-color: #F5F6F7;
+  margin-left: 10px;
+  overflow-y: auto;
+  max-height: 500px;
+}
+
+.channel{
+  height: 30px;
+  color:#696969;
+  text-align: center;
+}
+
+.channel:hover {
+  background-color: #DFDFDF;
+}
+
+.channels a{
+  text-decoration: none;
+}
+
+#txt-message{
+  flex:95%;
+  margin: 0 0px 0 10px;
+  padding: 0 10px 0 5px;
+  height: 20px;
+  outline: none;
+  color:#494949;
+  border-color: #F5F6F7;
+  border-width: thin;
+}
+
+#btn-send-message{
+  flex:5%;
+  background-color: #87CEEB;
+  border: none;
+  outline:none;
+  margin-right: 10px;
+  cursor:pointer;
+}
+
+#btn-send-message:hover{
+  background-color: #00CEEB;
+}
+
+#btn-send-message:active{
+  background-color: #00AAFF;
+}
+
+#btn-send-message i {
+  color:white;
+}
+
+#username{
+  color: #87CEEB;
+  text-align: center;
+}
+
+#txt-name-channel{
+  color: #696969;
+  font-size: 16px;
+  border-style:none;
+  border-radius: 10px;
+  background-color: #F5F6F7;
+  text-align: center;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  height: 30px;
+  outline: none;
+}
+
+#btn-add-channel{
+  border-style: none;
+  background-color: Transparent;
+  vertical-align: middle;
+  outline: none;
+}
+
+#btn-add-channel i{
+  color:#D6D6D6;
+  height: 30px;
+}

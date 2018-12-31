@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+    <!--<script src="{{ url_for('static', filename='index.js') }}"></script> -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Flack</title>
+  </head>
+  <body>
+    <header>
+      <h3 id="username">Alexis</h3>
+      <hr>
+    </header>
+      <div class="container">
+        <section class="channel-body">
+          <input id="txt-name-channel" type="text" onfocus="this.placeholder=''" onblur="this.placeholder='New channel'" placeholder="New channel"/>
+          <button id="btn-add-channel" class="btn btn-default" type="button"><i class="fa fa-plus-circle fa-2x"></i></button>
+          <div class="channels">
+            <a href="" onclick="load_messages()"><div class="channel">Friends</div></a>
+            <a href="" onclick="load_messages()"><div class="channel">Work</div></a>
+            <a href="" onclick="load_messages()"><div class="channel">People who i hate</div></a>
+            <a href="" onclick="load_messages()"><div class="channel">Friends</div></a>
+
+          </div>
+        </section>
+
+        <section class="chat-body">
+          <div class="messages">
+            <div class="self-message">
+              <blockquote>Hello Friends</blockquote>
+            </div>
+            <div class="guess-message">
+              <blockquote>Hello Friends</blockquote>
+            </div>
+            <div class="self-message">
+              <blockquote>Hello Friends</blockquote>
+            </div>
+          </div>
+          <div class="bar-message">
+            <input id="txt-message" type="text" placeholder="Write your message here..." />
+            <button id="btn-send-message"><i class="fa fa-paper-plane"></i></button>
+          </div>
+        </section>
+      </div>
+  </body>
+</html>
