@@ -22,10 +22,8 @@ body{
   flex:3;
   padding: 0 30px 0 10px;
   margin: 0 30px 0 10px;
-  height: 500px;
-  max-height: 800px;
-  overflow-y: scroll;
-  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
 }
 
 .bar-message{
@@ -33,11 +31,13 @@ body{
 }
 
 .messages{
-  display: inline-block;
-  position:relative;
+  display: flex;
+  flex-direction: column;
   flex: 1;
-  overflow: auto;
-  width: 100%;
+  justify-content: flex-end;
+  overflow-y: auto;
+  max-height: 500px;
+  overflow-y: scroll;
 }
 
 .guess-message{
@@ -46,6 +46,8 @@ body{
   margin: 10px;
   color:#505050;
   max-width: 60%;
+  min-width: 10%;
+  align-self: flex-start;
 }
 
 .self-message{
@@ -54,6 +56,7 @@ body{
   color:white;
   margin: 10px;
   max-width: 60%;
+  align-self: flex-end;
 }
 
 .self-message datetime, .guess-message datetime{
